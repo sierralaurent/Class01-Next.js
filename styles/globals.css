@@ -94,6 +94,34 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+label {
+  color: lightgrey;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium';
+}
+input {
+  background-color: green;
+  height: 30px;
+  width: 200px;
+  border-radius: 8px;
+  border: 8px;
+
+}
+button {
+  color: green;
+  font-size: 30px;
+  background-color: lightgrey;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: 8px;
+}
+.pickles {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+}
 
 a {
   color: inherit;

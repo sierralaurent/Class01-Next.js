@@ -39,7 +39,9 @@ const CheckLogin = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <label>First name:</label>
+        <div>
+          <div className='pickles'>
+          <label>First Name:</label>
         <input
         type="text" 
         id="first"
@@ -48,19 +50,25 @@ const CheckLogin = () => {
         title="The first letter should be capital"
         onChange={(e => setFormData({...formData, firstName: e.target.value}))}
         />
-        <label>Username:</label>
+          </div>
+          <div className='pickles'>
+          <label>Username:</label>
         <input
         type="text" 
         id="first"
         name="username"
         required
-        title="The first letter should eb capital"
+        title="The first letter should be capital"
         minLength="5"
         maxlength="10"
         onChange={(e => setFormData({...formData, username: e.target.value}))}
         />
-
-        <button type="submit" onClick={() => CheckLogin()}>Submit</button>
+          </div>
+          <div className='pickles'>
+          <button type="submit" onClick={() => CheckLogin()}>Submit</button>
+          </div>
+        </div>
+        
       </main>
     </>
   )
